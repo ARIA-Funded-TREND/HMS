@@ -1,7 +1,7 @@
 
-# Scalable Machines with Intrinsic Higher Mental States
+# Reinforcement Learning
 
-This repository contains the implementation of **Scalable Machines with Intrinsic Higher Mental States**, integrated with Google’s PI framework ([Brain Tokyo Workshop](https://github.com/google/brain-tokyo-workshop)).
+This repository contains the implementation of Reinforcement Learning (RL) algorithm for **Scalable Machines with Intrinsic Higher Mental States**, integrated with Google’s PI framework ([Brain Tokyo Workshop](https://github.com/google/brain-tokyo-workshop)).
 
 The implementation utilizes **CO4** and is designed to be highly modular, with individual classes handling specific logic to maintain scalability despite the increased code length.
 
