@@ -441,8 +441,7 @@ def create_hybrid_vit(
     model_size: str = 'tiny',
     num_classes: int = 10,
     image_size: int = 32,
-    attention_pattern: Union[str, List[str]] = 'modulated',
-    modulate_v: bool = False,
+    modulate_v: bool = True,
     dropout: float = None,
     drop_path_rate: float = None
 ):
@@ -462,33 +461,27 @@ def create_hybrid_vit(
         Hybrid Vision Transformer model
     """
     configs = {
-        'tiny': {
-            'embed_dim': 192,
-            'depth': 12,
-            'num_heads': 3,
-            'patch_size': 16 if image_size >= 224 else 4,
-            'mlp_ratio': 4.0,
-            'dropout': 0.0,
-            'drop_path_rate': 0.1
-        },
-        'small': {
+        'hybrid_base': {
             'embed_dim': 768,
             'depth': 6,
             'num_heads': 12,
             'patch_size': 16,
             'mlp_ratio': 4.0,
             'dropout': 0.1,
-            'drop_path_rate': 0.1
+            'drop_path_rate': 0.1,
+            'attention_pattern': ['modulated', 'modulated' ,'standard', 'modulated','modulated', 'standard']
         },
-        'base': {
+        'co4_base': {
             'embed_dim': 768,
-            'depth': 12,
-            'num_heads': 12,
-            'patch_size': 16 if image_size >= 224 else 4,
+            'depth': 6,
+            'num_heads': 1,
+            'patch_size': 16,
             'mlp_ratio': 4.0,
             'dropout': 0.1,
-            'drop_path_rate': 0.1
+            'drop_path_rate': 0.1,
+            'attention_pattern': ['modulated', 'modulated' ,'modulated', 'modulated','modulated', 'modulated']
         }
+
     }
     
     assert model_size in configs, f"Model size {model_size} not supported"
@@ -508,6 +501,6 @@ def create_hybrid_vit(
         mlp_ratio=config['mlp_ratio'],
         dropout=final_dropout,
         drop_path_rate=final_drop_path_rate,
-        attention_pattern=attention_pattern,
+        attention_pattern=config['attention_pattern'],
         modulate_v=modulate_v
     )
