@@ -16,11 +16,9 @@ IMAGE_PATH = "/home/bilal/SAM3-Demo/prompt.png"
 CHECKPOINT_PATH = "/home/bilal/Research/model.safetensors"
 
 # Model Architecture Params
-MODEL_SIZE = "small"         # 'tiny', 'small', 'base', 'large'
+MODEL_SIZE = "hybrid_base"         # 'hybrid_base', 'co4_base'
 IMAGE_SIZE = 224
-NUM_CLASSES = 1000
-ATTENTION_PATTERN = ['modulated', 'modulated' ,'standard', 'modulated','modulated', 'standard'] 
-MODULATE_V = True   
+NUM_CLASSES = 1000   
 MEAN, STD = [0.485, 0.456, 0.406], [0.229, 0.224, 0.225] # ImageNet transformation constants
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
@@ -63,8 +61,6 @@ def run_inference():
         model_size=MODEL_SIZE,
         num_classes=NUM_CLASSES,
         image_size=IMAGE_SIZE,
-        attention_pattern=ATTENTION_PATTERN,
-        modulate_v=MODULATE_V,
         dropout=0.0,
         drop_path_rate=0.0
     )

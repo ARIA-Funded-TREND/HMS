@@ -20,11 +20,9 @@ BATCH_SIZE = 256
 NUM_WORKERS = 8
 PIN_MEMORY = True
 
-MODEL_SIZE = "small"
+MODEL_SIZE = "hybrid_base"         # 'hybrid_base', 'co4_base'
 IMAGE_SIZE = 224
 NUM_CLASSES = 1000
-ATTENTION_PATTERN = ['modulated', 'modulated' ,'standard', 'modulated','modulated', 'standard']
-MODULATE_V = True
 # ==========================================
 
 class ImageNetValDataset(Dataset):
@@ -114,8 +112,6 @@ def evaluate():
         model_size=MODEL_SIZE,
         num_classes=NUM_CLASSES,
         image_size=IMAGE_SIZE,
-        attention_pattern=ATTENTION_PATTERN,
-        modulate_v=MODULATE_V,
         dropout=0.0,
         drop_path_rate=0.0
     )
