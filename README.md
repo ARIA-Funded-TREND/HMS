@@ -16,7 +16,7 @@ Developed by **[CMILab](https://cmilab.org/aichip/)**, this project focuses on t
 ## 🏗️ Architecture
 ![System Architecture](./img/Architecture.png)
 
-*Our architecture leverages energy-based frameworks to maintain stable intrinsic states, allowing for more robust reasoning and scalability compared to traditional feed-forward models.*
+*Our architecture.*
 
 ## 🎥 Demo
 <p align="center">
