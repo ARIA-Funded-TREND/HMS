@@ -1,6 +1,5 @@
 ## 🏗️ Model Architectures
-### Imagenet 1K
-We provide two primary configurations. Both utilize a patch size of 16 and an embedding dimension of 768.
+We provide two primary configurations pre-trained on imagenet-1k. Both utilize a patch size of 16 and an embedding dimension of 768.
 
 | Configuration | Depth | Mod Layer Heads |  MHSA Layer Heads | Attention Pattern | Description |
 | --- | --- | --- | --- | --- | --- |
