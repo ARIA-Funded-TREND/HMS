@@ -18,13 +18,16 @@ This codebase is intentionally presented as a research platform rather than a fi
 ## 🏗️ Architecture
 ![System Architecture](./assests/Architecture.png)
 
+latent QL, KL, and VL tokens are initialized from a random distribution and used as feedforward (FF) input or receptive field (RF). Input QX, KX, VX, and µ act as proximal (P), distal (D), and universal (U) contextual factors (CFs) providing feedback (FB). The Qm, Km, and Vm TPN-like circuits evolve via asynchronous triadic Modulation Transfer Functions (AMTF) under apical drive and apical drive + awake thought states. The evolved Qm, Km, and Vm are then selected and fed into the self-attention block.
+
+
 ## Reinforcement Learning
 ### 🎥 Demo
 <p align="center">
   <img width="100%" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXdkZzNkdGY3ZjQ5eDdtcDJic3J4N3RhaHR5MGpoZ2JoNjcwcG4zeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/n0m3XuzrmgKpowAdyi/giphy.gif" alt="Project Demo">
 </p>
 
-Comparison of a permutation-invariant Transformer (left) and the CO4 model with intrinsic higher-order mental states (right), both trained for 100 episodes; CO4 reaches ~700 reward.
+Comparison of a permutation-invariant Transformer (left) and the CO4 model with intrinsic higher-order mental states (right), both trained for 100 episodes; CO4 reaches ~700 reward while transformer only reaches 245 reward.
 
 ## Object Classification 
 ![Comparison]()
