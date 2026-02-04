@@ -24,7 +24,7 @@ latent QL, KL, and VL tokens are initialized from a random distribution and used
 ## Reinforcement Learning
 ### 🎥 Demo
 <p align="center">
-  <img width="100%" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTViZ3V2NzlueDB4bDkwNHg3YjFzazRqYXA2Ym84NXgxNGdiY2o5YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pcruZRhUo6qyPVD0N9/giphy.gif" alt="Project Demo">
+  <img width="70%" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTViZ3V2NzlueDB4bDkwNHg3YjFzazRqYXA2Ym84NXgxNGdiY2o5YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pcruZRhUo6qyPVD0N9/giphy.gif" alt="Project Demo">
 </p>
 
 
