@@ -1,7 +1,7 @@
 
 # Reinforcement Learning
 
-This repository contains the implementation of Reinforcement Learning (RL) algorithm for **Scalable Machines with Intrinsic Higher Mental States**, integrated with Google’s PI framework ([Brain Tokyo Workshop](https://github.com/google/brain-tokyo-workshop)).
+This repository contains the implementation of Reinforcement Learning (RL) algorithm for **Scalable Machines with Intrinsic Higher Mental States**, using Google’s PI framework ([Brain Tokyo Workshop](https://github.com/google/brain-tokyo-workshop)) as baseline.
 
 The implementation utilizes **CO4** and is designed to be highly modular, with individual classes handling specific logic to maintain scalability despite the increased code length.
 
@@ -54,6 +54,7 @@ python train_agent.py --config configs/x.gin --log-dir log/x --num-workers 6
 * `--config`: Path to your `.gin` configuration.
 * `--log-dir`: Directory where logs and model checkpoints will be saved.
 * `--num-workers`: Number of parallel workers for rollouts.
+* `x_cmi.gin`: File for experiment hyperparameter for Co4.
 
 ### Evaluation
 
@@ -96,13 +97,9 @@ Below is a comparison of training progress across various RL environments, showc
 | :--- | :---: | :---: |
 | **Results** | ![Acrobot](images/AcrobotGooglevsCMI.png) | ![CarRacing](images/CarRacingGooglevsCMI.png) |
 
-| **Environment** | **CartPole** | **MountainCar** |
+| **Environment** | **CartPole** | **PyAnt** |
 | :--- | :---: | :---: |
-| **Results** | ![CartPole](images/CartPoleGooglevsCMI.png) | ![MountainCar](images/MountainCarGooglevsCMI.png) |
-
-| **Environment** | **PyAnt** |
-| :--- | :---: |
-| **Results** | ![PyAnt](images/PyAntGooglevsCMI.png) |
+| **Results** | ![CartPole](images/CartPoleGooglevsCMI.png) | ![PyAnt](images/PyAntGooglevsCMI.png) |
 
 ---
 

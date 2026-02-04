@@ -5,7 +5,7 @@
 # Scalable Machines With Intrinsic Higher Mental States
 
 <p align="center">
-  <a href="https://cmilab.org/aichip/">
+  <a href="https://cmilab.org/aichip/trend/">
     <img src="https://img.shields.io/badge/🌐-Project_Website-blue?style=for-the-badge" alt="Website">
   </a>
 </p>
