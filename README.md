@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/logo.webp" width="200" alt="CmiLab Logo">
+  <img src="./assests/logo.webp" width="200" alt="CmiLab Logo">
 </p>
 
 # Scalable Machines With Intrinsic Higher Mental States
@@ -16,12 +16,16 @@ This repository provides a general reference implementation of **Scalable Machin
 This codebase is intentionally presented as a research platform rather than a finalized or optimized model. It is designed to support experimentation, understanding, and community-driven exploration of alternative architectural directions beyond standard attention mechanisms.
 
 ## 🏗️ Architecture
-![System Architecture](./img/Architecture.png)
+![System Architecture](./assests/Architecture.png)
 
-## 🎥 Demo
+## Reinforcement Learning
+### 🎥 Demo
 <p align="center">
   <img width="100%" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXdkZzNkdGY3ZjQ5eDdtcDJic3J4N3RhaHR5MGpoZ2JoNjcwcG4zeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/n0m3XuzrmgKpowAdyi/giphy.gif" alt="Project Demo">
 </p>
+
+## Object Classification 
+![Comparison]()
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
