@@ -11,12 +11,12 @@
 </p>
 
 ## 🌐 Overview
-Developed by **[CMILab](https://cmilab.org/aichip/)**, this project focuses on the development of AI architectures that move beyond reactive processing toward scalable machines with internal cognitive representations.
+This repository provides a general reference implementation of **Scalable Machines With Intrinsic Higher Mental States**, extending prior work with an open, scalable architecture and early validation on large-scale benchmarks such as ImageNet-1K. The model achieves near-linear scaling with respect to input size while enabling faster learning and reduced computational cost by using fewer heads, layers, and tokens.
+
+This codebase is intentionally presented as a research platform rather than a finalized or optimized model. It is designed to support experimentation, understanding, and community-driven exploration of alternative architectural directions beyond standard attention mechanisms.
 
 ## 🏗️ Architecture
 ![System Architecture](./img/Architecture.png)
-
-*Our architecture.*
 
 ## 🎥 Demo
 <p align="center">
