@@ -24,7 +24,7 @@ latent QL, KL, and VL tokens are initialized from a random distribution and used
 ## Reinforcement Learning
 ### 🎥 Demo
 <p align="center">
-  <img width="100%" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmgxOG90b3Zoc3FnY3hxdHRldTV3YnRkbmswcXIwOHo4dWllcnF1OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/j2k5Hxm1ioiddvMiVP/giphy.gif" alt="Project Demo">
+  <img width="100%" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDFpMXAzNjMxOTY5bjR3OTdqMzVrbThxeGx2MWNxOWlpdThhNHBzeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/j2k5Hxm1ioiddvMiVP/giphy.gif" alt="Project Demo">
 </p>
 
 Comparison of a permutation-invariant Transformer (left) and the CO4 model with intrinsic higher-order mental states (right), both trained for 100 episodes; CO4 reaches ~700 reward while transformer only reaches 245 reward.
