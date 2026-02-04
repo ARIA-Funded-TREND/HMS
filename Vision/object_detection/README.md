@@ -1,6 +1,6 @@
 ## 🏗️ Model Architectures
-
-We provide two primary configurations. Both utilize a patch size of 16 and an embedding dimension of 768, but differ significantly in their attention mechanisms.
+### Imagenet 1K
+We provide two primary configurations. Both utilize a patch size of 16 and an embedding dimension of 768.
 
 | Configuration | Depth | Mod Layer Heads |  MHSA Layer Heads | Attention Pattern | Description |
 | --- | --- | --- | --- | --- | --- |
@@ -28,10 +28,9 @@ pip install -r requirements.txt
 
 ## 📥 Model Weights
 
-Pre-trained weights are hosted on Hugging Face. Download the weights for the configuration you wish to test:
+Pre-trained weights are hosted on Hugging Face. Download the weights from the link:
 
-* **Hybrid Base:** [`hybrid_base.safetensors`](https://www.google.com/search?q=%5Bhttps://huggingface.co/engrbilal/HMS_Vision/blob/main/hybrid_base.safetensors%5D(https://huggingface.co/engrbilal/HMS_Vision/blob/main/hybrid_base.safetensors))
-* **Co4 Base:** [`co4_base.safetensors`](https://www.google.com/search?q=%5Bhttps://huggingface.co/engrbilal/HMS_Vision/blob/main/co4_base.safetensors%5D(https://huggingface.co/engrbilal/HMS_Vision/blob/main/co4_base.safetensors))
+* **Pre-trained Weights:** [`hybrid_base.safetensors`](https://huggingface.co/engrbilal/HMS_Vision/tree/main)
 
 ## 🖼️ Inference
 
