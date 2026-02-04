@@ -31,6 +31,6 @@ Comparison of a permutation-invariant Transformer (left) and the CO4 model with 
 
 ## Object Classification 
 ![Comparison](./assests/bird.png)
-Early training comparison between an attention-only Vision Transformer (ViT) (Dosovitskiy, 2020), trained from scratch, and a CO4 machine endowed with intrinsic higher mental states that pre-select relevant information before attention is applied, in a task to identify a bird from the Mini-ImageNet dataset. The brightness in the attention-only Transformer highlights areas after applying attention, whereas the Co4 model first highlights important regions in the image using its internal mechanisms, before attention is applied.
+Early training comparison between an attention-only Vision Transformer (ViT) (Dosovitskiy, 2020), trained from scratch, and a CO4 machine endowed with intrinsic higher mental states that pre-select relevant information before attention is applied, in a task to identify a bird from the Mini-ImageNet dataset. The brightness in the attention-only Transformer highlights areas after applying attention, whereas the CO4 model first highlights important regions in the image using its internal mechanisms, before attention is applied.
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
