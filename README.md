@@ -16,7 +16,7 @@ This repository provides a general reference implementation of **Scalable Machin
 This codebase is intentionally presented as a research platform rather than a finalized or optimized model. It is designed to support experimentation, understanding, and community-driven exploration of alternative architectural directions beyond standard attention mechanisms.
 
 ## 🏗️ Architecture
-![System Architecture](./assests/Architecture.png)
+![System Architecture](./assests/Architecture.jpg)
 
 latent QL, KL, and VL tokens are initialized from a random distribution and used as feedforward (FF) input or receptive field (RF). Input QX, KX, VX, and µ act as proximal (P), distal (D), and universal (U) contextual factors (CFs) providing feedback (FB). The Qm, Km, and Vm TPN-like circuits evolve via asynchronous triadic Modulation Transfer Functions (AMTF) under apical drive and apical drive + awake thought states. The evolved Qm, Km, and Vm are then selected and fed into the self-attention block.
 
