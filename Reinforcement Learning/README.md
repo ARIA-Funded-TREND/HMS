@@ -119,8 +119,10 @@ Below is a comparison of training progress across various RL environments, showc
 ### Cartpole
 https://github.com/user-attachments/assets/555d802d-bca4-49ee-8d0e-c7ce666d3e7c
 
+A Comparison of cartpole trained on 1K, 5K and 10K episodes with Transformer and Co4 with intrinsic higher mental states shows a much better understanding of environment, when trained with Co4.
+
 
 ### PyAnt
 https://github.com/user-attachments/assets/6af058fa-77ff-4da8-8517-106920ad2f88
 
-
+A Comparison of PyAnt trained on 1K episodes with Transformer and Co4 with intrinsic higher mental states shows exponentially fast learning, when trained with Co4.
