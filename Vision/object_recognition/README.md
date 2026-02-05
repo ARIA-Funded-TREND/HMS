@@ -81,3 +81,10 @@ python evaluate.py
 accelerate launch evaluate.py
 
 ```
+
+
+## Runtime Evaluation 
+
+![Runtime Evaluation](/assests/RunTimevsSeqLength.png)
+
+Inference runtime as a function of sequence length for a single-layer standard Transformer versus a single-layer Co4, as sequence length increase, time complexity increases drastically for transformer.
