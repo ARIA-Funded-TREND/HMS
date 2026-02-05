@@ -109,7 +109,6 @@ Below is a comparison of training progress across various RL environments, showc
 * `configs/`: `.gin` files for experiment hyperparameters.
 * `log/`: Training logs and saved `.npz` model weights.
 * `images/`: Visualization plots for documentation.
-* 
 
 
 
