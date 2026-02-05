@@ -35,8 +35,9 @@ Early training comparison between an attention-only Vision Transformer (ViT) (Do
 https://github.com/user-attachments/assets/4373bd43-49a4-495e-881a-697671bd48ca
 
 
+## Gradient Flow
 
-
+![phi_dynamics (1)](https://github.com/user-attachments/assets/b71765c3-e53d-438e-a692-37d08259c497)
 
 
 Comparison of a permutation-invariant Transformer (left) and the CO4 model with intrinsic higher-order mental states (right), both trained for 100 episodes; CO4 reaches ~700 reward while transformer only reaches 245 reward.
