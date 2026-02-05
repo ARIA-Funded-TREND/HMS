@@ -65,7 +65,7 @@ class RLTask(BaseTask):
             action = self.modify_action(action)
             obs, reward, done, info = self.env.step(action)
             obs = self.modify_obs(obs)
-            # reward = self.modify_reward(reward, done)
+            reward = self.modify_reward(reward, done)
             done = self.modify_done(reward, done)
             self.step_cnt += 1
             ep_reward += reward
@@ -102,7 +102,7 @@ class PyBulletTask(RLTask):
         return super(PyBulletTask, self).reset_for_rollout()
 
     def modify_reward(self, reward, done):
-        if self.eval_mode:
+        if self.eval_mode or not hasattr(self.env, "rewards"): # Added For Acrobot Fix
             return reward
         else:
             return max(0, sum(self.env.rewards[1:]))
