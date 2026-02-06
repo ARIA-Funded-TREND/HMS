@@ -10,7 +10,7 @@ We provide two primary configurations pre-trained on imagenet-1k. Both utilize a
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/ARIA-TREND/HMS.git
+git clone https://github.com/ARIA-Funded-TREND/HMS.git
 cd Vision/object_recognition
 
 ```
