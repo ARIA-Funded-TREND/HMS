@@ -18,7 +18,7 @@ This codebase is intentionally presented as a research platform rather than a fi
 ## 🏗️ Architecture
 ![System Architecture](./assests/Architecture.png)
 
-Latent QL, KL, and VL tokens are initialized from a random distribution and used as feedforward (FF) input or receptive field (RF). Input QX, KX, VX, and µ act as proximal (P), distal (D), and universal (U) contextual factors (CFs) providing feedback (FB). The Qm, Km, and Vm TPN-like circuits evolve via asynchronous triadic Modulation Transfer Functions (AMTF) under apical drive and apical drive + awake thought states. The evolved Qm, Km, and Vm are then selected and fed into the self-attention block.
+Latent Q_L, K_L, and V_L tokens are initialized from a random distribution and used as feedforward (FF) inputs or receptive fields (R). Input Q_X, K_X, V_X, and µ act as proximal (P), distal (D), and universal (U) contextual fields (CFs), providing feedback (FB) on the fly. The Q_m, K_m, and V_m TPN-like circuits evolve via asynchronous triadic Modulation Transfer Functions (AMTFs) under apical drive and apical drive + awake thought states. The evolved Q_m, K_m, and V_m are then selected and fed into the self-attention block.
 
 
 ## Gradient Flow  
