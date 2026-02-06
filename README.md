@@ -16,9 +16,17 @@ This repository provides a general reference implementation of **Scalable Machin
 This codebase is intentionally presented as a research platform rather than a finalized or optimized model. It is designed to support experimentation, understanding, and community-driven exploration of alternative architectural directions beyond standard attention mechanisms.
 
 ## 🏗️ Architecture
-![System Architecture](./assests/Architecture.png)
+![System Architecture](./assests/Co41.png)
 
 Latent QL, KL, and VL tokens are initialized from a random distribution and used as feedforward (FF) input or receptive field (RF). Input QX, KX, VX, and µ act as proximal (P), distal (D), and universal (U) contextual factors (CFs) providing feedback (FB). The Qm, Km, and Vm TPN-like circuits evolve via asynchronous triadic Modulation Transfer Functions (AMTF) under apical drive and apical drive + awake thought states. The evolved Qm, Km, and Vm are then selected and fed into the self-attention block.
+
+
+## Gradient Flow  
+The plot shows the interactive gradient flow of the cooperation dynamics defined by Cooperation(R, C) = R² + 2R + C(1 + |R|) and Cooperation(R, C) = C² + 2C + C(1 + |R|) revealing distinct bursting regimes that emerge from evidence–context coupling and their gradient flow.
+
+[![GradientFlowDynamics](https://github.com/user-attachments/assets/808933c9-ef82-4e75-a561-c49150f55ed6)](https://beingtalha.github.io/ARIA-Funded-TREND.github.io/)
+
+
 
 ## Object Classification 
 ![Comparison](./assests/bird.png)
@@ -37,12 +45,6 @@ Early training comparison between an attention-only Vision Transformer (ViT) (Do
 
 
 Comparison of a permutation-invariant Transformer (left) and the CO4 model with intrinsic higher-order mental states (right), both trained for 100 episodes; CO4 reaches ~700 reward while transformer only reaches 245 reward.
-
-## Gradient Flow  
-The plot shows the interactive gradient flow of the cooperation dynamics defined by Cooperation(R, C) = R² + 2R + C(1 + |R|) and Cooperation(R, C) = C² + 2C + C(1 + |R|) revealing distinct bursting regimes that emerge from evidence–context coupling and their gradient flow.
-
-[![GradientFlowDynamics](https://github.com/user-attachments/assets/808933c9-ef82-4e75-a561-c49150f55ed6)](https://beingtalha.github.io/ARIA-Funded-TREND.github.io/)
-
 
 
 ## 📄 License
