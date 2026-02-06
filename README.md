@@ -11,7 +11,7 @@
 </p>
 
 ## 🌐 Overview
-This repository provides a general reference implementation of **Scalable Machines With Intrinsic Higher Mental States**, extending prior work (adeel, 2025, beyond) with an open, scalable architecture (CO4) and early validation on large-scale benchmarks such as ImageNet-1K. The model achieves near-linear scaling with respect to input size while enabling faster learning and reduced computational cost by using fewer heads, layers, and tokens.
+This repository provides a general reference implementation of **Scalable Machines With Intrinsic Higher Mental States**, extending prior work _(adeel, 2025, beyond)_ with an open, scalable architecture (CO4) and early validation on large-scale benchmarks such as ImageNet-1K. The model achieves near-linear scaling with respect to input size while enabling faster learning and reduced computational cost by using fewer heads, layers, and tokens.
 
 This codebase is intentionally presented as a research platform rather than a finalized or optimized model. It is designed to support experimentation, understanding, and community-driven exploration of alternative architectural directions beyond standard attention mechanisms.
 
