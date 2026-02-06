@@ -18,11 +18,13 @@ This codebase is intentionally presented as a research platform rather than a fi
 ## 🏗️ Architecture
 ![System Architecture](./assests/Architecture.png)
 
-Latent Q_L, K_L, and V_L tokens are initialized from a random distribution and used as feedforward (FF) inputs or receptive fields (R). Input Q_X, K_X, V_X, and µ act as proximal (P), distal (D), and universal (U) contextual fields (CFs), providing feedback (FB) on the fly. The Q_m, K_m, and V_m TPN-like circuits evolve via asynchronous triadic Modulation Transfer Functions (AMTFs) under apical drive and apical drive + awake thought states. The evolved Q_m, K_m, and V_m are then selected and fed into the self-attention block.
+## Latent Triadic Modulation Mechanism
 
+Latent tokens $Q_L$, $K_L$, and $V_L$ are initialized from a random distribution and used as feedforward (FF) inputs or receptive fields (R). Input tokens $Q_X$, $K_X$, $V_X$, and $\mu$ act as proximal (P), distal (D), and universal (U) contextual fields (CFs), providing feedback (FB) on the fly. The TPN-like circuits $Q_m$, $K_m$, and $V_m$ evolve via asynchronous triadic Modulation Transfer Functions (AMTFs) under: Apical Drive (AD), Apical Drive + Awake Thought (AD + Awake). The evolved tokens $Q_m$, $K_m$, and $V_m$ are then selected and fed into the self-attention block.
 
 ## Gradient Flow  
-The plot shows the interactive gradient flow of the cooperation dynamics defined by Cooperation(R, C) = R² + 2R + C(1 + |R|) and Cooperation(R, C) = C² + 2C + C(1 + |R|) revealing distinct bursting regimes that emerge from evidence–context coupling and their gradient flow.
+A demonstration of how different modulatory cooperation laws Φ(𝑅,𝐶) reshape the cooperation surface and its gradient field ∇Φ(𝑅,𝐶) over the 𝑅−𝐶. Changes in contextual and receptive-field strength move the system between apical isolation, apical amplification, apical drive, and AD+Awake regimes, producing corresponding deformations in the geometry of gradient flow. By shaping representations prior to attention, these modulation laws guide gradients along coherent RF–CF interaction manifolds, reducing propagation through noisy or irrelevant directions. This structured learning geometry helps explain the faster convergence and improved learning efficiency observed in Co^4 compared to standard Transformers, where gradients propagate without such context-conditioned modulation.
+
 
 [![GradientFlowDynamics](https://github.com/user-attachments/assets/808933c9-ef82-4e75-a561-c49150f55ed6)](https://beingtalha.github.io/ARIA-Funded-TREND.github.io/)
 
