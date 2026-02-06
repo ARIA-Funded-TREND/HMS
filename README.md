@@ -35,12 +35,13 @@ Early training comparison between an attention-only Vision Transformer (ViT) (Do
 ![Comparison of permutation-invariant Transformer vs CO4 model](https://github.com/user-attachments/assets/4373bd43-49a4-495e-881a-697671bd48ca)
 Comparison of a permutation-invariant Transformer (left) and the CO4 model with intrinsic higher-order mental states (right), both trained for 100 episodes; CO4 reaches ~700 reward while transformer only reaches 245 reward.
 
+<!--
 ## Gradient Flow  
 The plot shows the interactive gradient flow of the cooperation dynamics defined by Cooperation(R, C) = R² + 2R + C(1 + |R|) and Cooperation(R, C) = C² + 2C + C(1 + |R|) revealing distinct bursting regimes that emerge from evidence–context coupling and its gradient flow.
 
 [![GradientFlowDynamics](https://github.com/user-attachments/assets/808933c9-ef82-4e75-a561-c49150f55ed6)](https://beingtalha.github.io/ARIA-Funded-TREND.github.io/)
 
-
+-->
 
 ## 📄 License
 The source code is released under the [Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/) license, permitting reuse and modification for research and academic purposes while restricting commercial use — see the [LICENSE](LICENSE) file for details.
