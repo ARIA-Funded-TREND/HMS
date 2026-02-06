@@ -50,3 +50,10 @@ Comparison of a permutation-invariant Transformer (left) and the CO4 model with 
 ## 📄 License
 The source code is released under the [Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/) license, permitting reuse and modification for research and academic purposes while restricting commercial use — see the [LICENSE](LICENSE) file for details.
 
+## BibTeX
+@article{adeel2025beyond,
+  title={Beyond Attention: Toward Machines with Intrinsic Higher Mental States},
+  author={Adeel, Ahsan},
+  journal={arXiv preprint arXiv:2505.06257},
+  year={2025}
+}
