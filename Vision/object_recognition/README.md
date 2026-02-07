@@ -84,7 +84,7 @@ accelerate launch evaluate.py
 ## 🧪 Training
 We provide a reference training notebook, **sample_training_code**, to demonstrate how to train the provided architectures within this repository. The notebook is intended as a starter template and includes the core components required to run training.
 
-> **_NOTE:_** This notebook is provided for reference purposes only. It is not configured with optimized hyperparameters (e.g., learning rate schedules, augmentation strategies, regularization, batch sizing) and should be treated as a baseline for experimentation rather than a final training recipe.
+> **_NOTE:_** The provided training notebook serves as a reference implementation for training the architectures in this repository. While it is not configured with fully optimized hyperparameters (e.g., learning rate schedules, augmentation strategies, regularization, or batch sizing), it contains all necessary components to reproduce the vision results reported in the paper. With appropriate configuration and compute resources, the results shown in the paper can be replicated using this notebook.
 
 
 ## ⏱️ Runtime Evaluation 

@@ -25,7 +25,7 @@ Latent tokens $Q_L$, $K_L$, and $V_L$ are initialized from a random distribution
 ## Gradient Flow  
 A demonstration of how different modulatory cooperation laws Φ(𝑅,𝐶) reshape the cooperation surface and its gradient field ∇Φ(𝑅,𝐶) over the 𝑅−𝐶. Changes in contextual and receptive-field strength move the system between apical isolation, apical amplification, apical drive, and AD+Awake regimes, producing corresponding deformations in the geometry of gradient flow. By shaping representations prior to attention, these modulation laws guide gradients along coherent RF–CF interaction manifolds, reducing propagation through noisy or irrelevant directions. This structured learning geometry helps explain the faster convergence and improved learning efficiency observed in Co^4 compared to standard Transformers, where gradients propagate without such context-conditioned modulation.
 
-
+**Click the GIF below to open the interactive demo in your browser**
 [![GradientFlowDynamics](https://github.com/user-attachments/assets/808933c9-ef82-4e75-a561-c49150f55ed6)](https://aria-funded-trend.github.io/HMS/)
 
 <!--[![GradientFlowDynamics](https://github.com/user-attachments/assets/808933c9-ef82-4e75-a561-c49150f55ed6)](https://aria-funded-trend.github.io/HMS.github.io/)
