@@ -86,9 +86,3 @@ We provide a reference training notebook, **sample_training_code**, to demonstra
 
 > **_NOTE:_** The provided training notebook serves as a reference implementation for training the architectures in this repository. While it is not configured with fully optimized hyperparameters (e.g., learning rate schedules, augmentation strategies, regularization, or batch sizing), it contains all necessary components to reproduce the vision results reported in the paper. With appropriate configuration and compute resources, the results shown in the paper can be replicated using this notebook.
 
-
-## ⏱️ Runtime Evaluation 
-
-![Runtime Evaluation](/assests/RunTimevsSeqLength.png)
-
-Inference runtime as a function of sequence length for a single-layer standard Transformer versus a single-layer Co4, as sequence length increase, time complexity increases drastically for transformer.
