@@ -124,4 +124,4 @@ A Comparison of cartpole trained on 1K, 5K and 10K episodes with Transformer and
 ### PyAnt
 https://github.com/user-attachments/assets/6af058fa-77ff-4da8-8517-106920ad2f88
 
-A Comparison of PyAnt trained on 1K episodes with Transformer and Co4 with intrinsic higher mental states shows exponentially fast learning, when trained with Co4.
+A Comparison of PyAnt trained on 1K episodes with Transformer and Co4 with intrinsic higher mental states shows faster learning, when trained with Co4.
