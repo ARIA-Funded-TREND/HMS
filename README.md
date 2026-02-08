@@ -34,7 +34,7 @@ A demonstration of how different modulatory cooperation laws Φ(𝑅,𝐶) resha
 
 ## Object Classification 
 ![Comparison](./assests/bird.png)
-Early training comparison between an attention-only Vision Transformer (ViT) _(Dosovitskiy, 2020)_ trained from scratch, and a Co<sup>4</sup> machine endowed with intrinsic higher mental states that pre-select relevant information before attention is applied. The task is to identify a bird from the Mini-ImageNet dataset. In the ViT model, the brightness indicates regions highlighted after applying attention. In contrast, Co<sup>4</sup>$ highlights important regions _(top k latent tokens)_ using internally generated awake imaginative  states _before_ attention is applied. Co<sup>4</sup> exhibits earlier and sharper activation over the semantically relevant object (bird), indicating more coherent internal inference.
+Early training comparison between an attention-only Vision Transformer (ViT) _(Dosovitskiy, 2020)_ trained from scratch, and a Co<sup>4</sup> machine endowed with intrinsic higher mental states that pre-select relevant information before attention is applied. The task is to identify a bird from the Mini-ImageNet dataset. In the ViT model, the brightness indicates regions highlighted after applying attention. In contrast, Co<sup>4</sup> highlights important regions _(top k latent tokens)_ using internally generated awake imaginative  states _before_ attention is applied. Co<sup>4</sup> exhibits earlier and sharper activation over the semantically relevant object (bird), indicating more coherent internal inference.
 
 ## Reinforcement Learning
 ### 🎥 Demo
