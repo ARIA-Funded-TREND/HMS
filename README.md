@@ -15,6 +15,36 @@ This repository provides a **general reference implementation** of Scalable Mach
 
 This codebase is intentionally presented as a research platform rather than a finalized or optimized model. It is designed to support experimentation, understanding, and community-driven exploration of alternative architectural directions beyond standard attention mechanisms.
 
+## 🧠 Core idea
+
+Modern Transformers determine relevance **after attention**, relying on depth and quadratic computation. Co⁴ introduces **intrinsic higher mental states** that allow the model to:
+
+- generate internal predictions before attention 
+- enforce pre-reflective contextual coherence at the representation level
+- select top-k latent tokens prior to attention
+- reduce computation from O(N²) to near-linear scaling in N
+
+The mechanism is inspired by two-point pyramidal neurons (TPNs) and implemented through triadic modulation loops among Q, K, and V latent populations.
+
+This repository provides the first open reference implementation of this architecture.
+
+## 📊 Reproducing key results
+
+The repository includes scripts for reproducing experiments reported in the paper:
+
+- CIFAR-10
+- Tiny-ImageNet
+- Mini-ImageNet
+- ImageNet-1K (early scaling)
+- CartPole, PyBullet Ant, Acrobot, CarRacing
+
+These correspond to:
+
+- Figure 3 (vision experiments)
+- Figure 4 (RL experiments)
+- Table 1–4 (ablation and scaling results)
+
+
 ## 🏗️ Architecture
 ![System Architecture](./assests/Architecture.png)
 
