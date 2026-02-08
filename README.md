@@ -39,13 +39,18 @@ Early training comparison between an attention-only Vision Transformer (ViT) _(D
 ## Reinforcement Learning
 ### 🎥 Demo
 
-<video src="https://github-production-user-asset-6210df.s3.amazonaws.com/122742805/546751693-1b619473-1e64-405b-ae85-c0d4dc1ea571.mp4"
+<!--<video src="https://github-production-user-asset-6210df.s3.amazonaws.com/122742805/546751693-1b619473-1e64-405b-ae85-c0d4dc1ea571.mp4"
        controls
        muted
        loop
        playsinline
        width="100%">
 </video>
+-->
+
+
+https://github.com/user-attachments/assets/892a8595-3071-4b2a-a9c7-d8e151ec111d
+
 
 
 
