@@ -11,13 +11,13 @@
 </p>
 
 ## 🌐 Overview
-This repository provides a general reference implementation of Scalable Machines With Intrinsic Higher Mental States, extending prior work _(adeel, 2025)_ with an open, scalable Cooperative Context-sensitive Cognitive Computation (Co<sup>4</sup>) architecture and early validation on large-scale benchmarks such as ImageNet-1K. 
+This repository provides a general reference implementation of Scalable Machines With Intrinsic Higher Mental States, extending prior work (adeel, 2025) with an open, scalable Cooperative Context-sensitive Cognitive Computation (Co<sup>4</sup>) architecture and early validation on large-scale benchmarks such as ImageNet-1K. 
 
-This codebase is intentionally presented as a **research platform rather than a finalized or optimized model**. It is designed to support experimentation, understanding, and community-driven exploration of alternative architectural directions beyond standard attention mechanisms.
+This codebase is intentionally presented as a research platform rather than a finalized or optimized model. It is designed to support experimentation, understanding, and community-driven exploration of alternative architectural directions beyond standard attention mechanisms.
 
 ## 🧠 Core idea
 
-Modern Transformers determine relevance **after attention**, relying on depth and quadratic computation. Co⁴ introduces **intrinsic higher mental states** that allow the model to:
+Modern Transformers determine relevance after attention, relying on depth and quadratic computation. Co⁴ introduces intrinsic higher mental states that allow the model to:
 
 - generate internal predictions before attention 
 - enforce pre-reflective contextual coherence at the representation level
@@ -26,7 +26,7 @@ Modern Transformers determine relevance **after attention**, relying on depth an
 
 The mechanism is inspired by two-point pyramidal neurons (TPNs) and implemented through triadic modulation loops among Q, K, and V latent populations.
 
-This repository provides the **first open reference implementation** of this architecture.
+This repository provides the first open reference implementation of this architecture.
 
 ## 📊 Reproducing key results
 
