@@ -3,3 +3,4 @@
 * Make sure Numpy version is correct for reproducibility 
 * Acrobot being a discrete env has been trained using Sample Technqiue which may cause results to vary during inference time.
 * If an issue arises due to invalid config file, undo the recent changes and update using VS Code.
+* best.npz files are model files saved by training from sratch while model.npz files were trained and provided in the reference paper.
