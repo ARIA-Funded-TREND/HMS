@@ -21,6 +21,7 @@ Modern Transformers determine relevance after attention, relying on depth and qu
 
 - generate internal predictions before attention 
 - enforce pre-reflective contextual coherence at the representation level
+- select top-k latent tokens prior to attention
 - enable faster learning with reduced computational demand (e.g., fewer heads, layers, and tokens)
 - reduce computation from O(N²) to near-linear scaling in N
 
