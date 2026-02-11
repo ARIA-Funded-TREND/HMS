@@ -50,11 +50,11 @@ These correspond to:
 
 
 ## 🏗️ Architecture
-![System Architecture](./assests/Architecture.png)
+![System Architecture](./assests/Co41.png)
 
 ## Latent Triadic Modulation Mechanism
 
-Latent tokens $Q_L$, $K_L$, and $V_L$ are initialized from a random distribution and used as feedforward (FF) inputs or receptive fields (R). Tokens $Q_X$, $K_X$, $V_X$, and $\mu$ act as proximal (P), distal (D), and universal (U) contextual fields (CFs), providing feedback (FB) on the fly. The TPN-like circuits $Q_m$, $K_m$, and $V_m$ evolve via asynchronous triadic Modulation Transfer Functions (AMTFs) under Apical Drive (AD) and Apical Drive + Awake Thought (AD + Awake) states. The evolved latent tokens $Q_m$, $K_m$, and $V_m$ are then selected and fed into the self-attention block.
+Latent tokens $Q_L$, $K_L$, and $V_L$ are initialized from a random distribution and used as feedforward (FF) inputs or receptive fields (R). Input, context-modulated prediction, Q^{N-1}_m, K^{N-1}_m, V^{N-1}_m, and μ act as proximal (P), distal (D), and universal (U) context (C), providing feedback (FB). For the first layer, these are equal to: Q_X, K_X, V_X, and initialized μ. The TPN-like circuits $Q_m$, $K_m$, and $V_m$ evolve via asynchronous triadic Modulation Transfer Functions (AMTFs) under Apical Drive (AD) and Apical Drive + Awake Thought (AD + Awake) states. The evolved latent tokens $Q_m$, $K_m$, and $V_m$ are then selected and fed into the self-attention block.
 
 ## Gradient Flow  
 A demonstration of how different modulatory cooperation laws Φ(𝑅,𝐶) reshape the cooperation surface and its gradient field ∇Φ(𝑅,𝐶) over the 𝑅−𝐶. Changes in contextual and receptive-field strength move the system between apical isolation, apical amplification, apical drive, and AD+Awake regimes, producing corresponding deformations in the geometry of gradient flow. By shaping representations prior to attention, these modulation laws guide gradients along coherent RF–CF interaction manifolds, reducing propagation through noisy or irrelevant directions. This structured learning geometry helps explain the faster convergence and improved learning efficiency observed in Co<sup>4</sup> compared to standard Transformers, where gradients propagate without such context-conditioned modulation.
