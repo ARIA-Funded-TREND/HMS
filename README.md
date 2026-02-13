@@ -24,7 +24,7 @@ Modern Transformers determine relevance after attention, relying on depth and qu
 - enable faster learning with reduced computational demand (e.g., fewer heads, layers, and tokens)
 - reduce computation from O(N²) to near-linear scaling in N
 
-The mechanism is inspired by two-point pyramidal neurons (TPNs) and implemented through triadic modulation loops among Q, K, and V latent populations.
+The mechanism is inspired by pyramidal two-point neurons (TPNs) and implemented through triadic modulation loops among Q, K, and V latent populations.
 
 This repository provides the first open reference implementation of this architecture.
 
