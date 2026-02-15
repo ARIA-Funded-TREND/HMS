@@ -95,11 +95,11 @@ Below is a comparison of training progress across various RL environments, showc
 
 | **Environment** | **Acrobot** | **CarRacing** |
 | :--- | :---: | :---: |
-| **Results** | ![Acrobot](/assests/AcrobotGooglevsCMI.png) | ![CarRacing](/assests/CarRacingGooglevsCMI.png) |
+| **Results** | ![Acrobot](/assets/AcrobotGooglevsCMI.png) | ![CarRacing](/assets/CarRacingGooglevsCMI.png) |
 
 | **Environment** | **CartPole** | **PyAnt** |
 | :--- | :---: | :---: |
-| **Results** | ![CartPole](/assests/CartPoleGooglevsCMI.png) | ![PyAnt](/assests/PyAntGooglevsCMI.png) |
+| **Results** | ![CartPole](/assets/CartPoleGooglevsCMI.png) | ![PyAnt](/assets/PyAntGooglevsCMI.png) |
 
 ---
 

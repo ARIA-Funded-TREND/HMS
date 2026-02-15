@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assests/logo.webp" width="200" alt="CmiLab Logo">
+  <img src="./assets/logo.webp" width="200" alt="CmiLab Logo">
 </p>
 
 # Scalable Machines With Intrinsic Higher Mental States
@@ -50,7 +50,7 @@ These correspond to:
 
 
 ## 🏗️ Architecture
-![System Architecture](./assests/Co41.png)
+![System Architecture](./assets/Co41.png)
 
 ## Latent Triadic Modulation Mechanism
 
@@ -67,10 +67,10 @@ A demonstration of how different modulatory cooperation laws Φ(𝑅,𝐶) resha
 
 
 ## Object Classification 
-![Attention_Maps](./assests/attention_heatmaps3.png)
+![Attention_Maps](./assets/attention_heatmaps3.png)
 Single-layer Co4 vs. standard attention-only Vision Transformer (ViT) (Dosovitskiy, 2020) trained on Mini-ImageNet for 30 epochs. Visualization of the complete attention distribution over _N_ input tokens, showing more scattered attention and less selective localization in the ViT. In contrast, Co4 shows more centered, context-aware activation patterns. Notably, no top-k pooling was applied.
 
-![Comparison](./assests/bird.png)
+![Comparison](./assets/bird.png)
 _Top-k_ pooling: Results of _top-k_ token selection in the standard Transformer are shown in the ablation study (Table 4 of the paper), where reducing the number of generated tokens via the _top-k_ feature leads to significant improved performance (faster learning) in Co4, whereas applying the same _top-k_ feature approach in attention-only Vision Transformer (ViT) reduces performance. This is early training comparison between an ViT _(Dosovitskiy, 2020)_ trained from scratch, and a Co<sup>4</sup> machine endowed with intrinsic higher mental states that pre-select relevant information before attention is applied. The task is to identify a bird from the Mini-ImageNet dataset. In the ViT model, the brightness indicates regions highlighted after applying attention. In contrast, Co<sup>4</sup> highlights important regions _(top k latent tokens)_ using internally generated awake imaginative  states _before_ attention is applied. Co<sup>4</sup> exhibits earlier and sharper activation over the semantically relevant object (bird), indicating more coherent internal inference. **It is worth noting that there is minimal gain from increasing the number of layers, as Co4 reaches a ceiling effect very early in training (see Figure 4).**
 
 ## Reinforcement Learning
