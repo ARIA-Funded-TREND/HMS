@@ -54,7 +54,7 @@ These correspond to:
 
 
 ## 🏗️ Architecture
-![System Architecture](./assets/Co41.png)
+![System Architecture](./assets/Co4.png)
 
 ## Latent Triadic Modulation Mechanism
 
