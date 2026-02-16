@@ -10,7 +10,7 @@
   </a>
 </p>
 
-**Status:** First reference implementation of Co⁴.
+**Status:** First reference implementation of Cooperative Context-sensitive Cognitive Computation (Co⁴).
 The architecture is under active development as part of the TREND project.
 
 
@@ -23,7 +23,7 @@ This codebase is intentionally presented as a research platform rather than a fi
 
 Modern Transformers determine relevance after attention, relying on depth and quadratic computation. Co⁴ introduces intrinsic higher mental states that allow the model to:
 
-- generate internal predictions before attention 
+- generate internal predictions to pre-select relevant information before attention via triadic neuronal-level modulation loops
 - enforce pre-reflective contextual coherence at the representation level
 - enable faster learning with reduced computational demand (e.g., fewer heads, layers, and tokens)
 - reduce computation from O(N²) to near-linear scaling in N
@@ -75,7 +75,7 @@ A demonstration of how different modulatory cooperation laws Φ(𝑅,𝐶) resha
 Single-layer Co4 vs. standard attention-only Vision Transformer (ViT) (Dosovitskiy, 2020) trained on Mini-ImageNet for 30 epochs. Visualization of the complete attention distribution over _N_ input tokens, showing more scattered attention and less selective localization in the ViT. In contrast, Co4 shows more centered, context-aware activation patterns. Notably, no top-k pooling was applied.
 
 ![Comparison](./assets/bird.png)
-_Top-k_ pooling: Results of _top-k_ token selection in the standard Transformer are shown in the ablation study (Table 4 of the paper), where reducing the number of generated tokens via the _top-k_ feature leads to significant improved performance (faster learning) in Co4, whereas applying the same _top-k_ feature approach in attention-only Vision Transformer (ViT) reduces performance. This is early training comparison between an ViT _(Dosovitskiy, 2020)_ trained from scratch, and a Co<sup>4</sup> machine endowed with intrinsic higher mental states that pre-select relevant information before attention is applied. The task is to identify a bird from the Mini-ImageNet dataset. In the ViT model, the brightness indicates regions highlighted after applying attention. In contrast, Co<sup>4</sup> highlights important regions _(top k latent tokens)_ using internally generated awake imaginative  states _before_ attention is applied. Co<sup>4</sup> exhibits earlier and sharper activation over the semantically relevant object (bird), indicating more coherent internal inference. **It is worth noting that there is minimal gain from increasing the number of layers, as Co4 reaches a ceiling effect very early in training (see Figure 4).**
+_Top-k_ pooling: Results of _top-k_ token selection in the standard Transformer are shown in the ablation study (Table 4 of the paper), where reducing the number of generated tokens via the _top-k_ feature leads to significant improved performance (faster learning) in Co4, whereas applying the same _top-k_ feature approach in attention-only Vision Transformer (ViT) reduces performance. This is early training comparison between an ViT _(Dosovitskiy, 2020)_ trained from scratch, and a Co<sup>4</sup> machine endowed with intrinsic higher mental states that pre-select relevant information before attention is applied. The task is to identify a bird from the Mini-ImageNet dataset. In the ViT model, the brightness indicates regions highlighted after applying attention. In contrast, Co<sup>4</sup> highlights important regions _(top k latent tokens)_ using internally generated awake imaginative  states _before_ attention is applied. Co<sup>4</sup> exhibits earlier and sharper activation over the semantically relevant object (bird), indicating more coherent internal inference. Co⁴ learns faster early, but scaling behavior is still being explored. These results raise questions about the necessity of attention and latent pooling, suggesting a natural convergence toward O(N) complexity.}
 
 ## Reinforcement Learning
 ### 🎥 Demo
