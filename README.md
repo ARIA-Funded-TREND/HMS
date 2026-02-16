@@ -101,15 +101,17 @@ The source code is released under the [Creative Commons Attribution–NonCommerc
 
 ## BibTeX
 @article{adeel2025beyond,
-  title={Beyond Attention: Toward Machines with Intrinsic Higher Mental States},
-  author={Adeel, Ahsan},
-  journal={arXiv preprint arXiv:2505.06257},
-  year={2025}
+  title   = {Beyond Attention: Toward Machines with Intrinsic Higher Mental States},
+  author  = {Adeel, Ahsan},
+  journal = {arXiv preprint arXiv:2505.06257},
+  year    = {2025}
 }
 
 @article{adeel2026scalable,
-  title={Scalable Machines With Intrinsic Higher Mental States},
-  author={Adeel, Ahsan},
-  journal={arXiv preprint arXiv:-v0.1},
-  year={2026}
+  title   = {Scalable Machines With Intrinsic Higher Mental States},
+  author  = {Adeel, Ahsan},
+  journal = {arXiv preprint},
+  note    = {arXiv submission (in preparation)},
+  year    = {2026}
 }
+
