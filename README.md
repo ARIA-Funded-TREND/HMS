@@ -10,6 +10,10 @@
   </a>
 </p>
 
+**Status:** First reference implementation of Co⁴.
+The architecture is under active development as part of the TREND project.
+
+
 ## 🌐 Overview
 This repository provides a general reference implementation of Scalable Machines With Intrinsic Higher Mental States, extending prior work (adeel, 2025) with an open, scalable Cooperative Context-sensitive Cognitive Computation (Co<sup>4</sup>) architecture and early validation on large-scale benchmarks such as ImageNet-1K. 
 
