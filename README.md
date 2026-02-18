@@ -113,7 +113,7 @@ The source code is released under the [Creative Commons Attribution–NonCommerc
 
 @article{adeel2026scalable,
   title   = {Scalable Machines With Intrinsic Higher Mental States},
-  author  = {Adeel, Ahsan},
+  author  = {Adeel, Ahsan et al.,},
   journal = {arXiv preprint},
   note    = {arXiv submission (in preparation)},
   year    = {2026}
