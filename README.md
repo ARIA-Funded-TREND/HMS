@@ -11,7 +11,7 @@
 </p>
 
 ## 🌐 Overview 
-Official reference implementation of Cooperative Context-sensitive Cognitive Computation (Co⁴) emulating awake thought (imagination) regimes to pre-select relevant information before attention is applied.
+Official reference implementation of Cooperative Context-sensitive Cognitive Computation (Co⁴), a mental-state-dependent regime-based architecture for pre-attentive relevance selection prior to attention computation.
 This is an active research codebase developed as part of the TREND project.
 The repository provides a fully reproducible framework including training scripts, evaluation pipelines, configuration files, and pretrained checkpoints for the experiments reported in the paper.
 This codebase is intentionally presented as a research platform rather than a finalized or fully optimized model. It is designed to support experimentation, reproducibility of reported results, and community-driven exploration of alternative architectural approaches beyond standard attention mechanisms.
