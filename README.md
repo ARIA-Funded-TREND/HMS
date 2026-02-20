@@ -15,7 +15,6 @@ This is an active research codebase developed as part of the TREND project.
 The repository provides a fully reproducible framework including training scripts, evaluation pipelines, configuration files, and pretrained checkpoints for the experiments reported in the paper.
 
 ## 🌐 Overview
-This repository provides a general reference implementation of Scalable Machines With Intrinsic Higher Mental States, extending prior work (adeel, 2025) with an open, scalable Cooperative Context-sensitive Cognitive Computation (Co<sup>4</sup>) architecture and early validation on large-scale benchmarks such as ImageNet-1K. 
 
 This codebase is intentionally presented as a research platform rather than a finalized or optimized model. It is designed to support experimentation, understanding, reproducibility of basic results, and community-driven exploration of work that goes beyond conventional AI toward real understanding.
 
