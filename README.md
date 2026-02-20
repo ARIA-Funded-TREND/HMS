@@ -10,9 +10,9 @@
   </a>
 </p>
 
-**Status:** First reference implementation of Cooperative Context-sensitive Cognitive Computation (Co⁴).
-The architecture is under active development as part of the TREND project.
-
+**Status:** Official reference implementation of Cooperative Context-sensitive Cognitive Computation (Co⁴).
+This is an active research codebase developed as part of the TREND project.
+The repository provides a fully reproducible framework including training scripts, evaluation pipelines, configuration files, and pretrained checkpoints for the experiments reported in the paper.
 
 ## 🌐 Overview
 This repository provides a general reference implementation of Scalable Machines With Intrinsic Higher Mental States, extending prior work (adeel, 2025) with an open, scalable Cooperative Context-sensitive Cognitive Computation (Co<sup>4</sup>) architecture and early validation on large-scale benchmarks such as ImageNet-1K. 
