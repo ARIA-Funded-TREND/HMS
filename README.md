@@ -18,12 +18,12 @@ This codebase is intentionally presented as a research platform rather than a fi
 
 ## 🧠 Core idea
 
-Modern Transformers determine relevance after attention, relying on depth and quadratic computation. Co⁴ introduces intrinsic higher mental states that allow the model to:
+Standard Transformer architectures primarily compute relevance through attention, often relying on deep stacks and quadratic attention complexity. Co⁴ introduces intrinsic mental-state-dependent processing regimes that enable the model to:
 
-- generate internal predictions to pre-select relevant information before attention via triadic neuronal-level modulation loops
+- generate internal predictions to pre-select relevant information before attention via neuronal-level triadic Q–K–V modulation loops
 - enforce pre-reflective contextual coherence at the representation level
 - enable faster learning with reduced computational demand (e.g., fewer heads, layers, and tokens)
-- reduce computation from O(N²) to near-linear scaling in N
+- approximate near-linear scaling behaviour in 𝑁 
 
 The mechanism is inspired by pyramidal two-point neurons (TPNs) and implemented through triadic modulation loops among Q, K, and V latent populations.
 
