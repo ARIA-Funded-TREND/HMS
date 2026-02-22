@@ -33,7 +33,7 @@ Once Co⁴ establishes coherence, i.e., a separation between relevant/coherent a
 **Example Design Choices**
 
 - **MLP-only routing (no attention)**: Fully replacing attention with simple MLP-only routing on modulated _V_ (e.g., Liu et al., 2021) yields strictly $\mathcal{O}(N)$ complexity.
-- **Top-_k_ attention over coherent tokens**: Using top-_k_ relevant tokens for attention operates at an approximate computational cost of $\mathcal{O}(N + k^2)$, where _N_ is number of input tokens and $k$ is selected top-_k_ coherent tokens. Since $k \ll N$ and $k \le \sqrt{N}$, the model exhibits near-linear scaling in $N$.
+- **Top-_k_ attention over coherent tokens**: Using top-_k_ relevant tokens for attention operates at an approximate computational cost of $\mathcal{O}(N + k^2)$, where _N_ denotes the number of input tokens and $k$ denotes the selected top-_k_ coherent tokens. Since $k \ll N$ and $k \le \sqrt{N}$, the model exhibits near-linear scaling in $N$.
 
 **Empirical Behaviour**
 
