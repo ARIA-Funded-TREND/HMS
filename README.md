@@ -11,10 +11,11 @@
 </p>
 
 ## 🌐 Overview 
-Official reference implementation of Cooperative Context-sensitive Cognitive Computation (Co⁴), a mental-state-dependent regime-based architecture for pre-attentive relevance selection prior to attention computation.
-This is an active research codebase developed as part of the TREND project.
-The repository provides a fully reproducible framework including training scripts, evaluation pipelines, configuration files, and pretrained checkpoints for the experiments reported in the paper.
-This codebase is intentionally presented as a research platform rather than a finalized or fully optimized model. It is designed to support experimentation, reproducibility of reported results, and community-driven exploration of alternative architectural approaches beyond standard attention mechanisms.
+This repository provides a reference implementation of Cooperative Context-sensitive Cognitive Computation (Co⁴), a mental-state-dependent, regime-based architecture for pre-attentive relevance selection prior to attention computation.
+
+The codebase has been developed as part of the TREND project and serves as an active research platform. It includes a fully reproducible framework comprising training scripts, evaluation pipelines, configuration files, and pretrained checkpoints corresponding to the experiments reported in the paper.
+
+This repository is intentionally presented as a research platform rather than a finalized or fully optimized production model. It is designed to facilitate experimentation, ensure reproducibility of reported results, and support community-driven exploration of alternative architectural directions beyond standard attention mechanisms.
 
 ## 🧠 Core idea
 
@@ -25,9 +26,25 @@ Standard Transformer architectures primarily compute relevance through attention
 - enable faster learning with reduced computational demand (e.g., fewer heads, layers, and tokens)
 - approximate near-linear scaling behaviour in 𝑁 
 
-The mechanism is inspired by pyramidal two-point neurons (TPNs) and implemented through triadic modulation loops among Q, K, and V latent populations.
+**Downstream Readout After Coherence Establishment**
 
-This repository provides the first open reference implementation of this architecture.
+Once Co⁴ establishes coherence, i.e., a separation between relevant/coherent and irrelevant/incoherent tokens, the exact downstream readout operator (e.g., pruning, gating, or a gated MLP in place of attention) becomes less critical and can be selected based on design priorities.
+
+**Example Design Choices**
+
+- **MLP-only routing (no attention)**: Fully replacing attention with simple MLP-only routing on modulated $V$ (e.g., Liu et al., 2021) yields strictly $\mathcal{O}(N)$ complexity.
+- **Top-$k$ attention over coherent tokens**: Using top-$k$ relevant tokens for attention operates at an approximate computational cost of $\mathcal{O}(N + k^2)$, where $N$ = number of input tokens and $k$ is selected top-$k$ coherent tokens. Since $k \ll N$ and $k \le \sqrt{N}$, the model exhibits near-linear scaling in $N$.
+
+**Empirical Behaviour**
+
+Both readout approaches support faster learning with substantially reduced computational demand in Co⁴. A top-$k$ relevant token strategy is applied and reported for both Co⁴ and ViT under matched experimental settings to enable a controlled comparison.
+
+**Empirical observation:**
+
+- Reducing the top-$k$ tokens improves performance in Co⁴.
+- Applying the same top-$k$ feature selection to ViT results in performance degradation.
+
+This behaviour contrasts with the commonly reported behaviour of standard Transformer-based models, which often benefit from increased context length, although such gains depend on training regime and architectural design.
 
 ## 📊 Reproducing key results
 
