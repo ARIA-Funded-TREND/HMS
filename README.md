@@ -37,7 +37,7 @@ Once Co⁴ establishes coherence, i.e., a separation between relevant/coherent a
 
 **Empirical Behaviour**
 
-Both readout approaches support faster learning with substantially reduced computational demand in Co⁴. A top-_k_ relevant token strategy is applied and reported for both Co⁴ and ViT under matched experimental settings to enable a controlled comparison.
+Both readout approaches support comparably faster learning with substantially reduced computational demand in Co⁴ (See Figure 8). A top-_k_ relevant token strategy is applied and reported for both Co⁴ and ViT under matched experimental settings to enable a controlled comparison.
 
 **Empirical observation:**
 
