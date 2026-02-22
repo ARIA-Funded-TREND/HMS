@@ -72,6 +72,8 @@ These correspond to:
 
 ## Latent Triadic Modulation Mechanism
 
+The specific form of the triadic modulation loops and the _R–C_ integration strategies may vary across datasets and hyperparameter configurations. For example, the figure below represents one of the architectural variants evaluated in _(Adeel et al., 2026)_, building on the basic architecture _(Adeel et al., 2025)_; other architectural instantiations are possible. The key element, however, is the cooperative modulation dynamics operating under distinct mental-state-dependent processing regimes.
+
 Latent tokens $Q_L$, $K_L$, and $V_L$ are initialized from a random distribution and used as feedforward (FF) inputs or receptive fields (R). Contextual input (context-modulated prediction), $Q^{N-1}_m$, $K^{N-1}_m$, $V^{N-1}_m$, and μ act as proximal (P), distal (D), and universal (U) context (C), providing feedback (FB). For the first layer, these are equal to: $Q_X$, $K_X$, $V_X$, and initialized μ. The TPN-like circuits $Q_m$, $K_m$, and $V_m$ evolve via asynchronous triadic Modulation Transfer Functions (AMTFs) under Apical Drive (AD) and Apical Drive + Awake Thought (AD + Awake) states. The evolved latent tokens $Q_m$, $K_m$, and $V_m$ are then selected and fed into the self-attention block.
 
 ## Gradient Flow  
