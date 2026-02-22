@@ -32,17 +32,17 @@ Once Co⁴ establishes coherence, i.e., a separation between relevant/coherent a
 
 **Example Design Choices**
 
-- **MLP-only routing (no attention)**: Fully replacing attention with simple MLP-only routing on modulated $V$ (e.g., Liu et al., 2021) yields strictly $\mathcal{O}(N)$ complexity.
-- **Top-$k$ attention over coherent tokens**: Using top-$k$ relevant tokens for attention operates at an approximate computational cost of $\mathcal{O}(N + k^2)$, where $N$ = number of input tokens and $k$ is selected top-$k$ coherent tokens. Since $k \ll N$ and $k \le \sqrt{N}$, the model exhibits near-linear scaling in $N$.
+- **MLP-only routing (no attention)**: Fully replacing attention with simple MLP-only routing on modulated _V_ (e.g., Liu et al., 2021) yields strictly $\mathcal{O}(N)$ complexity.
+- **Top-_k_ attention over coherent tokens**: Using top-_k_ relevant tokens for attention operates at an approximate computational cost of $\mathcal{O}(N + k^2)$, where _N_ is number of input tokens and $k$ is selected top-_k_ coherent tokens. Since $k \ll N$ and $k \le \sqrt{N}$, the model exhibits near-linear scaling in $N$.
 
 **Empirical Behaviour**
 
-Both readout approaches support faster learning with substantially reduced computational demand in Co⁴. A top-$k$ relevant token strategy is applied and reported for both Co⁴ and ViT under matched experimental settings to enable a controlled comparison.
+Both readout approaches support faster learning with substantially reduced computational demand in Co⁴. A top-_k_ relevant token strategy is applied and reported for both Co⁴ and ViT under matched experimental settings to enable a controlled comparison.
 
 **Empirical observation:**
 
-- Reducing the top-$k$ tokens improves performance in Co⁴.
-- Applying the same top-$k$ feature selection to ViT results in performance degradation.
+- Reducing the top-_k_ tokens improves performance in Co⁴.
+- Applying the same top-_k_ feature selection to ViT results in performance degradation.
 
 This behaviour contrasts with the commonly reported behaviour of standard Transformer-based models, which often benefit from increased context length, although such gains depend on training regime and architectural design.
 
