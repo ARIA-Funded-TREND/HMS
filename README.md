@@ -11,11 +11,11 @@
 </p>
 
 ## 🌐 Overview 
-This repository provides a reference implementation of Cooperative Context-sensitive Cognitive Computation (Co⁴), a mental-state-dependent, regime-based architecture that emulates awake processing to pre-select relevant information before attention computation.
+This repository provides a reference implementation of Cooperative Context-sensitive Cognitive Computation (Co⁴), a mental-state-dependent, regime-based architecture that emulates awake imaginative processing to pre-select relevant information before attention computation.
 
-The codebase has been developed as part of the TREND project and serves as an active research platform. It includes a fully reproducible framework comprising training scripts, evaluation pipelines, configuration files, and pretrained checkpoints corresponding to the experiments reported in the paper.
+The code is released as an open research platform rather than a finalized architecture to support reproducible research and community-driven development.
 
-This repository is intentionally presented as a research platform rather than a finalized or fully optimized production model. It is designed to facilitate experimentation, ensure reproducibility of reported results, and support community-driven exploration of alternative architectural directions beyond standard attention mechanisms.
+It includes a fully reproducible framework comprising training scripts, evaluation pipelines, configuration files, and pretrained checkpoints corresponding to the experiments reported in the paper.
 
 ## 🧠 Core idea
 
