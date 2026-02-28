@@ -11,19 +11,17 @@
 </p>
 
 ## 🌐 Overview 
-This repository provides a reference implementation of Cooperative Context-sensitive Cognitive Computation (Co⁴), a mental-state-dependent, regime-based architecture that emulates awake imaginative processing to pre-select relevant information before attention computation.
+This repository provides a reference implementation of _Scalable Machine with Intrinsic Higher Mental States_, demonstrating how machines can emulate cellular neurobiological principles associated with awake thought (imagination) states to pre-select coherent information prior to attention computation, thereby enabling a rapid transition from initial biases to refined understanding.
 
-The code is released as an open research platform rather than a finalized architecture to support reproducible research and community-driven development.
-
-It includes a fully reproducible framework comprising training scripts, evaluation pipelines, configuration files, and pretrained checkpoints corresponding to the experiments reported in the paper.
+The code is released as an open research platform rather than a finalized architecture to support reproducible research and community-driven development. It includes a fully reproducible framework comprising training scripts, evaluation pipelines, configuration files, and pretrained checkpoints corresponding to the experiments reported in the paper.
 
 ## 🧠 Core idea
 
-Standard Transformer architectures primarily compute relevance through attention, often relying on deep stacks and quadratic attention complexity. Co⁴ introduces intrinsic mental-state-dependent processing regimes that enable the model to:
+Standard Transformer architectures primarily compute relevance through attention, often relying on deep stacks and quadratic attention complexity. In contrast, the Co⁴ architecture introduces intrinsic regime-dependent processing dynamics that enable the model to:
 
-- generate internal predictions to pre-select relevant information before attention via neuronal-level triadic Q–K–V modulation loops
-- enforce pre-reflective contextual coherence at the representation level
-- enable faster learning with reduced computational demand (e.g., fewer heads, layers, and tokens)
+- generate internal predictions to pre-select relevant information prior to attention via neuronal-level triadic Q–K–V modulation loops.
+- enforce contextual coherence at the representation level before attention is applied.
+- accelerate learning while reducing computational demand (e.g., fewer heads, layers, and tokens)
 - approximate near-linear scaling behaviour in 𝑁 
 
 **Downstream Readout After Coherence Establishment**
