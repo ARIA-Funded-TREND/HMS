@@ -11,13 +11,13 @@
 </p>
 
 ## 🌐 Overview 
-This repository provides a reference implementation of _Scalable Machine with Intrinsic Higher Mental States_, demonstrating how machines can emulate cellular neurobiological principles associated with awake thought (imagination) states to pre-select coherent information prior to attention computation, thereby enabling a rapid transition from initial biases to refined understanding.
+This repository provides a reference implementation of _Scalable Machine with Intrinsic Higher Mental States_(Adeel, A., et al., 2026).
 
 The code is released as an open research platform rather than a finalized architecture to support reproducible research and community-driven development. It includes a fully reproducible framework comprising training scripts, evaluation pipelines, configuration files, and pretrained checkpoints corresponding to the experiments reported in the paper.
 
 ## 🧠 Core idea
 
-Standard Transformer architectures primarily compute relevance through attention, often relying on deep stacks and quadratic attention complexity. In contrast, the Co⁴ architecture introduces intrinsic regime-dependent processing dynamics that enable the model to:
+Standard Transformer architectures primarily compute relevance through attention, often relying on deep stacks and quadratic attention complexity. In contrast, the Co⁴ architecture, which implements principles underlying awake imaginative dynamics, enables the model to:
 
 - generate internal predictions to pre-select relevant information prior to attention via neuronal-level triadic Q–K–V modulation loops.
 - enforce contextual coherence at the representation level before attention is applied.
@@ -30,19 +30,19 @@ Once Co⁴ establishes coherence, i.e., a separation between relevant/coherent a
 
 **Example Design Choices**
 
-- **MLP-only routing (no attention)**: Fully replacing attention with simple MLP-only routing on modulated _V_ (e.g., Liu et al., 2021) yields strictly $\mathcal{O}(N)$ complexity.
+- **MLP-only routing (no attention)**: Replacing attention entirely with a simple MLP applied to modulated _V_ yields strictly _O(N)_ complexity.
 - **Top-_k_ attention over coherent tokens**: Using top-_k_ relevant tokens for attention operates at an approximate computational cost of $\mathcal{O}(N + k^2)$, where _N_ denotes the number of input tokens and $k$ denotes the selected top-_k_ coherent tokens. Since $k \ll N$ and $k \le \sqrt{N}$, the model exhibits near-linear scaling in $N$.
 
 **Empirical Behaviour**
 
-Both readout approaches support comparably faster learning with substantially reduced computational demand in Co⁴ (See Figure 8). A top-_k_ relevant token strategy is applied and reported for both Co⁴ and ViT under matched experimental settings to enable a controlled comparison.
+Both readout approaches yield substantially faster learning with reduced computational demand in Co⁴ compared to a standard Transformer under identical or smaller total parameter counts and the same training schedule. 
 
 **Empirical observation:**
 
 - Reducing the top-_k_ tokens improves performance in Co⁴.
 - Applying the same top-_k_ feature selection to ViT results in performance degradation.
-
-This behaviour contrasts with the commonly reported behaviour of standard Transformer-based models, which often benefit from increased context length, although such gains depend on training regime and architectural design.
+  
+This behaviour contrasts with the commonly reported behaviour of standard Transformer-based models, which often benefit from increased context length.
 
 ## 📊 Reproducing key results
 
