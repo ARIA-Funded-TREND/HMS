@@ -11,7 +11,7 @@
 </p>
 
 ## 🌐 Overview 
-This repository provides a reference implementation of _Scalable Machine with Intrinsic Higher Mental States_ (Adeel, A., et al., 2026).
+This repository provides a reference implementation of _Scalable Machine with Intrinsic Higher Mental States_.
 
 The code is released as an open research platform rather than a finalized architecture to support reproducible research and community-driven development. It includes a fully reproducible framework comprising training scripts, evaluation pipelines, configuration files, and pretrained checkpoints corresponding to the experiments reported in the paper.
 
