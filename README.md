@@ -15,7 +15,7 @@ A reference implementation of *Scalable Machine with Intrinsic Higher Mental Sta
 
 This repository is released as an open research platform rather than a finalized architecture to support reproducible research, transparent experimentation, and community-driven development. The repository includes: training scripts, evaluation pipelines, configuration files, and pretrained checkpoints corresponding to the experiments reported in the paper.
 
-The code is provided for Equations (7–9) in the formulation where latent $Q$, $K$, and $V$ tokens are initialized from normal distributions, and the $top-k$ most relevant tokens are selected for attention. Running the provided implementation reproduces all Co⁴ results reported in the paper. For experimentation with the joint internal state $\mu$, Equation (1) can additionally be implemented.
+The code is provided for Equations (7–9) in the formulation where latent $Q$, $K$, and $V$ tokens are initialized from normal distributions, and the top-_k_ most relevant tokens are selected for attention. Running the provided implementation reproduces all Co⁴ results reported in the paper. For experimentation with the joint internal state $\mu$, Equation (1) can additionally be implemented.
 
 The codebase can be easily adapted to reproduce results for Co4-MLP, which replaces attention entirely with a simple MLP applied to the modulated V tokens. To reproduce this version, use Equations (10–12) and initialize latents from input projections.
 
