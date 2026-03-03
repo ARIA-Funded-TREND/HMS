@@ -13,13 +13,13 @@
 ## 🌐 Overview 
 This repository provides a reference implementation of *Scalable Machine with Intrinsic Higher Mental States*.
 
-The code is provided for Equations (7–9) in the formulation where latent Q, K, and V tokens are initialized from normal distributions, and the top-12 most relevant tokens are selected for attention. The computational complexity is $$\mathcal{O}(N + k^2)$$, where k << N and k <= sqrt(N). This results in near-linear scaling with respect to the number of tokens N. Running the provided implementation reproduces all Co4 results reported in the paper. For experimentation with the joint internal state mu, Equation (1) can additionally be implemented.
+The code is provided for Equations (7–9) in the formulation where latent $Q$, $K$, and $V$ tokens are initialized from normal distributions, and the top-12 most relevant tokens are selected for attention. The computational complexity is $$\mathcal{O}(N + k^2)$$, where $k \ll N$ and $k \le \sqrt{N}$. This results in near-linear scaling with respect to the number of tokens $N$. Running the provided implementation reproduces all Co⁴ results reported in the paper. For experimentation with the joint internal state $\mu$, Equation (1) can additionally be implemented.
 
-The codebase can be easily adapted to reproduce results for Co4-MLP, which replaces attention entirely with a simple MLP applied to the modulated V tokens. This variant achieves strictly O(N) complexity. To reproduce this version, use Equations (10–12) and initialize latents from input projections such that: Q_L = Q_X, K_L = K_X, and V_L = V_X.
+The codebase can be easily adapted to reproduce results for **Co4-MLP**, which replaces attention entirely with a simple MLP applied to the modulated V tokens. This variant achieves strictly $$\mathcal{O}(N)$$ complexity. To reproduce this version, use Equations (10–12) and initialize latents from input projections.
 
 The repository is released as an open research platform rather than a finalized architecture to support reproducible research, transparent experimentation, and community-driven development. It includes: training scripts, evaluation pipelines, configuration files, and pretrained checkpoints corresponding to the experiments reported in the paper.
 
-For questions, issues, or collaboration inquiries: TREND@stir.ac.uk
+For questions, issues, or collaboration inquiries:**TREND@stir.ac.uk**
 
 ## 🧠 Core idea
 
