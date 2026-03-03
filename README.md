@@ -72,7 +72,7 @@ These correspond to:
 
 
 ## 🏗️ Architecture
-The specific form of the triadic modulation loops and the $R–C$ integration strategies may vary across datasets and hyperparameter configurations. For example, Figure 1(b) represents one of the architectural variants evaluated in this paper, building on the basic architecture; other architectural instantiations are possible. The key element, however, is the cooperative modulation dynamics _MOD(R, C)_ operating under distinct mental-state-dependent processing regimes 
+The specific form of the triadic modulation loops and the _R–C_ integration strategies may vary across datasets and hyperparameter configurations. For example, Figure 1(b) represents one of the architectural variants evaluated in this paper, building on the basic architecture; other architectural instantiations are possible. The key element, however, is the cooperative modulation dynamics _(MOD(R, C))_ operating under distinct mental-state-dependent processing regimes 
 
 ![System Architecture](./assets/Co41n.png)
 
