@@ -13,7 +13,7 @@
 ## 🌐 Overview 
 This repository provides a reference implementation of *Scalable Machine with Intrinsic Higher Mental States*.
 
-The code is provided for Equations (7–9) in the formulation where latent Q, K, and V tokens are initialized from normal distributions, and the top-12 most relevant tokens are selected for attention. The computational complexity is: O(N + k^2), where k << N and k <= sqrt(N). This results in near-linear scaling with respect to the number of tokens N. Running the provided implementation reproduces all Co4 results reported in the paper. For experimentation with the joint internal state mu, Equation (1) can additionally be implemented.
+The code is provided for Equations (7–9) in the formulation where latent Q, K, and V tokens are initialized from normal distributions, and the top-12 most relevant tokens are selected for attention. The computational complexity is $$\mathcal{O}(N + k^2)$$, where k << N and k <= sqrt(N). This results in near-linear scaling with respect to the number of tokens N. Running the provided implementation reproduces all Co4 results reported in the paper. For experimentation with the joint internal state mu, Equation (1) can additionally be implemented.
 
 The codebase can be easily adapted to reproduce results for Co4-MLP, which replaces attention entirely with a simple MLP applied to the modulated V tokens. This variant achieves strictly O(N) complexity. To reproduce this version, use Equations (10–12) and initialize latents from input projections such that: Q_L = Q_X, K_L = K_X, and V_L = V_X.
 
