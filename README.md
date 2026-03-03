@@ -19,7 +19,7 @@ The code is provided for Equations (7–9) in the formulation where latent $Q$, 
 
 The codebase can be easily adapted to reproduce results for Co4-MLP, which replaces attention entirely with a simple MLP applied to the modulated V tokens. This variant achieves strictly $$\mathcal{O}(N)$$ complexity. To reproduce this version, use Equations (10–12) and initialize latents from input projections.
 
-For questions, issues, or collaboration inquiries:**TREND@stir.ac.uk**
+For questions, issues, or collaboration inquiries: **TREND@stir.ac.uk**
 
 ## 🧠 Core idea
 
