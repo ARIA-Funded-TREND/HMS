@@ -27,7 +27,8 @@ The repository includes:
 
 ## Reproducing the Main Results
 
-The default implementation corresponds to Equations (7–9) in the paper where latent Q, K, V tokens are initialized from normal distributions. Running the provided training scripts reproduces the results reported in the paper. 
+The default implementation corresponds to Equations (7–9) in the paper where latent Q, K, V tokens are initialized from normal distributions. Running the provided training scripts reproduces the results reported in the paper for vision experiments. For RL experiments, Equations (10–12) have been used.
+
 
 The codebase can also reproduce the Co⁴-MLP variant, which simply feeds the modulated $V$ tokens into an MLP block, removing attention entirely.
 
