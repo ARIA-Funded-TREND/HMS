@@ -35,7 +35,7 @@ For experimentation with the joint internal state μ, the belief-state update de
 
 ## Co⁴-MLP Variant
 
-The codebase can be easily adapted to reproduce results for Co4-MLP variant, which replaces attention entirely with a simple MLP applied to the modulated V tokens.
+The codebase can also reproduce the Co⁴-MLP variant, which replaces attention entirely with a simple MLP applied to the modulated V tokens.
 
 To run this configuration:
 
