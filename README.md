@@ -11,15 +11,44 @@
 </p>
 
 ## 🌐 Overview 
-A reference implementation of *Scalable Machine with Intrinsic Higher Mental States*.
 
-This repository is released as an open research platform rather than a finalized architecture to support reproducible research, transparent experimentation, and community-driven development. The repository includes: training scripts, evaluation pipelines, configuration files, and pretrained checkpoints corresponding to the experiments reported in the paper.
+Reference implementation of **Scalable Machines with Intrinsic Higher Mental States**.
 
-The code is provided for Equations (7–9) in the formulation where latent $Q$, $K$, and $V$ tokens are initialized from normal distributions, and the top-_k_ most relevant tokens are selected for attention. Running the provided implementation reproduces all Co⁴ results reported in the paper. For experimentation with the joint internal state $\mu$, Equation (1) can additionally be implemented.
+This repository is released as an **open research platform** rather than a finalized architecture to support reproducible research, transparent experimentation, and community-driven development. The implementation closely follows the formulation described in the accompanying paper and is intended to serve as a minimal, transparent reference implementation of the proposed mechanism.
 
-The codebase can be easily adapted to reproduce results for Co4-MLP, which replaces attention entirely with a simple MLP applied to the modulated V tokens. To reproduce this version, use Equations (10–12) and initialize latents from input projections.
+The repository includes:
 
-For questions, issues, or collaboration inquiries: **TREND@stir.ac.uk**
+- Training scripts  
+- Evaluation pipelines  
+- Configuration files  
+- Pretrained checkpoints corresponding to the experiments reported in the paper
+
+---
+
+## Reproducing the Main Results
+
+The default implementation corresponds to Equations (7–9) in the paper where latent Q, K, V tokens are initialized from normal distributions. Running the provided training scripts reproduces the results reported in the paper.
+
+For experimentation with the joint internal state μ, the belief-state update described in Equation (1) can optionally be implemented.
+
+---
+
+## Co⁴-MLP Variant
+
+The codebase can be easily adapted to reproduce results for Co4-MLP variant, which replaces attention entirely with a simple MLP applied to the modulated V tokens.
+
+To run this configuration:
+
+- Implement Equations (10–12)
+- Initialize latent tokens directly from input projections
+
+---
+
+## Contact
+
+For questions, issues, or collaboration inquiries:
+
+TREND@stir.ac.uk
 
 ## 🧠 Core idea
 
@@ -116,19 +145,14 @@ Comparison of a permutation-invariant Transformer (left) and the CO4 model with 
 ## 📄 License
 The source code is released under the [Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/) license, permitting reuse and modification for research and academic purposes while restricting commercial use — see the [LICENSE](LICENSE) file for details.
 
-## BibTeX
-@article{adeel2025beyond,
-  title   = {Beyond Attention: Toward Machines with Intrinsic Higher Mental States},
-  author  = {Adeel, Ahsan},
-  journal = {arXiv preprint arXiv:2505.06257},
-  year    = {2025}
-}
+## Citation
 
-@article{adeel2026scalable,
-  title   = {Scalable Machines With Intrinsic Higher Mental States},
-  author  = {Adeel, Ahsan et al.,},
-  journal = {arXiv preprint},
-  note    = {arXiv submission (in preparation)},
-  year    = {2026}
+If you use this code in your research, please cite:
+
+@article{adeel2026co4,
+  title={Scalable Machines with Intrinsic Higher Mental States},
+  author={Adeel, Ahsan et al.},
+  year={2026},
+  journal={arXiv preprint}
 }
 
