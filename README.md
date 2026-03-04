@@ -137,7 +137,7 @@ https://github.com/user-attachments/assets/892a8595-3071-4b2a-a9c7-d8e151ec111d
 
 
 
-Comparison of a permutation-invariant Transformer (left) and the CO4 model with intrinsic higher-order mental states (right), both trained for 100 episodes; CO4 reaches ~700 reward while transformer only reaches 245 reward.
+Comparison of a permutation-invariant Transformer (left) and the Co⁴ model (right), both trained for 100 episodes; Co⁴ reaches ~700 reward while transformer only reaches 245 reward.
 
 
 ## 📄 License
