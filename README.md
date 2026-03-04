@@ -27,20 +27,16 @@ The repository includes:
 
 ## Reproducing the Main Results
 
-The default implementation corresponds to Equations (7–9) in the paper where latent Q, K, V tokens are initialized from normal distributions. Running the provided training scripts reproduces the results reported in the paper.
+The default implementation corresponds to Equations (7–9) in the paper where latent Q, K, V tokens are initialized from normal distributions. Running the provided training scripts reproduces the results reported in the paper. 
 
-For experimentation with the joint internal state μ, the belief-state update described in Equation (1) can optionally be implemented.
-
----
-
-## Co⁴-MLP Variant
-
-The codebase can also reproduce the Co⁴-MLP variant, which replaces attention entirely with a simple MLP applied to the modulated V tokens.
+The codebase can also reproduce the Co⁴-MLP variant, which simply feeds the modulated $V$ tokens into an MLP block, removing attention entirely.
 
 To run this configuration:
 
 - Implement Equations (10–12)
 - Initialize latent tokens directly from input projections
+
+For experimentation with the joint internal state μ, the belief-state update described in Equation (1) can optionally be implemented.
 
 ---
 
