@@ -59,7 +59,7 @@ Standard Transformer architectures primarily compute relevance through attention
 
 **Downstream Readout After Coherence Establishment**
 
-Once Co⁴ establishes coherence — separating relevant (coherent) tokens from irrelevant (incoherent) ones, the exact downstream readout operator (e.g., pruning, gating, or a gated MLP in place of attention) becomes less critical and can be selected based on design priorities. 
+Once Co⁴ establishes coherence — separating relevant (coherent) tokens from irrelevant (incoherent) ones, the exact downstream readout operator (e.g., pruning, gating, or MLP in place of attention) becomes less critical and can be selected based on design priorities. 
 
 **Example Design Choices**
 
