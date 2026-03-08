@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="./assets/logo.webp" width="200" alt="CmiLab Logo">
+  <a href="https://aria.org.uk/" target="_blank">
+    <img src="./assets/logo.webp" width="200" alt="CmiLab Logo">
+  </a>
 </p>
 
 # Scalable Machines With Intrinsic Higher Mental States
